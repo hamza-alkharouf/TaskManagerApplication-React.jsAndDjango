@@ -1,0 +1,15 @@
+pip install pipenv
+pipenv shell
+pipenv install django
+
+django-admin startproject backend
+cd backend
+python manage.py startapp todo
+
+python manage.py migrate
+
+python manage.py runserver
+
+#when to do new class in model
+python manage.py makemigrations
+python manage.py migrate
