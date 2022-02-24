@@ -1,15 +1,42 @@
+//----------------when create project-------------------------------
 pip install pipenv
 pipenv shell
 pipenv install django
-
 django-admin startproject backend
 cd backend
 python manage.py startapp todo
-
 python manage.py migrate
+//------------------end-----------------------------
 
+
+//----------------------to run server-------------------------
 python manage.py runserver
+//------------------end-----------------------------
 
+
+//--------------------when to do new class in model---------------------------
 #when to do new class in model
 python manage.py makemigrations
 python manage.py migrate
+//------------------end-----------------------------
+
+
+//--------------------to create superuser---------------------------
+python manage.py createsuperuser 
+user:admin
+pass:admin
+//------------------end-----------------------------
+
+//--------------------install django rest freamework ---------------------------
+pipenv install djangorestframework django-cors-headers
+
+
+npx = note package execute
+npx create-react-app frontend
+npm install reactstrap bootstrap
+npm start
+//------------------end-----------------------------
+
+
+you should run 
+npm start , python manage.py runserver
